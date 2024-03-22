@@ -1,4 +1,4 @@
-# Trabook React + Vite + tailwind + styled component
+# Trabook React + Vite + tailwind
 
 Proyecto final para agencia de viajes Trabook. 
 
