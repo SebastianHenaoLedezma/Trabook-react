@@ -1,23 +1,13 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import Home from './assets/components/Home';
-import { createGlobalStyle } from 'styled-components';
+import Home from './components/Home';
 
 const App = () => {
   return (
     <>
-      <GlobalStyle />
-      <div>
-        <Home/>
-      </div>
+      <Home />
     </>
   );
 };
 
 export default App;
-
-const GlobalStyle = createGlobalStyle`
-  *{
-    font-family: "Volkhov", serif;
-  }
-`;
