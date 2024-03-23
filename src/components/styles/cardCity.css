@@ -1,0 +1,102 @@
+@import "../../constants/colores.css";
+@import "../../constants/font-family.css";
+
+.card-container div{
+  /* display: grid; */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.card-container div .Card {
+  /* box-shadow: 5px 3px 30px 4px rgb(174, 174, 174); */
+  border: 1px solid #66666636;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  border-radius: 13px;
+}
+
+.card-container div .Card:hover {
+  box-shadow: 0px 0px 37px -6px var(--backgroundShadowButton);
+}
+
+.card-container div .Card .figure {
+  position: relative;
+  cursor: pointer;
+  border-radius: 6px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.card-container div .Card .figure img {
+  width: 100%;
+  height: 100%;
+  transition: transform 400ms ease-out;
+}
+
+.card-container div .Card .figure .container-btn {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 400ms ease-out, visibility 400ms ease-out;
+}
+
+.card-container div .Card .figure:hover .container-btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-container div .Card .figure .container-btn .btn-booking {
+  position: absolute;
+  bottom: 51px;
+  left: 65px;
+  padding: 9px 23px;
+  color: var(--secondaryColor);
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primaryColor);
+}
+
+.card-container div .Card .CardFooter {
+  padding: 25px 10px 10px 10px;
+}
+
+.card-container div .Card .CardFooter img {
+  height: 20px;
+}
+
+.card-container div .Card .CardFooter .rate {
+  color: gray;
+  font-weight: 400;
+}
+
+.card-container div .Card .CardFooter .price {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.card-container div .Card .CardFooter .sale {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #ffe7db;
+  color: var(--primaryColor);
+}
+
+@media screen and (max-width: 616px) {
+  .card-container div {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+  }
+}
+
+@media (min-width: 617px) and (max-width: 1222px) {
+  .card-container div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+}
