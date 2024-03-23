@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import "./styles/header.css";
 import logotipo from '../assets/images/logo.png'
-import MobileMenu from '../assets/components/mobileMenu'
 
 const Header = () => {
 
@@ -35,7 +34,6 @@ const Header = () => {
           </div>
 
           <div className="menuMobile">
-            <MobileMenu clicked={clicked} handleClick={handleClick} />
           </div>
 
           {/* Es el menu hamburguesa  */}
