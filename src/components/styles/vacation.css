@@ -1,0 +1,51 @@
+@import "../../constants/colores.css";
+@import "../../constants/font-family.css";
+
+.home5 h2 {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  color: var(--colorTextPrimary);
+  span {
+    color: var(--primaryColor);
+  }
+}
+
+.home5 .info-vacation {
+  position: relative;
+}
+
+.home5 .info-vacation .plane {
+  position: relative;
+  z-index: 1;
+}
+
+.home5 .info-vacation .img-palms {
+    z-index: -1;
+  position: absolute;
+  top: 0;
+  right: -10em;
+  height: 90px;
+}
+
+.home5 p {
+  font-family: var(--font-primary);
+  color: var(--textDescriptionColor);
+  font-weight: 400;
+}
+
+@media screen and (max-width: 550px) {
+  .home5 h2 {
+    text-align: center;
+    font-size: 55px;
+  }
+
+  .home5 .info-vacation .img-palms {
+    right: 0em;
+  }
+}
+
+@media (min-width: 551px) and (max-width: 866px) {
+    .home5 .info-vacation .img-palms {
+        right: -7em;
+      }
+}
