@@ -1,0 +1,17 @@
+@import "../../constants/colores.css";
+@import "../../constants/font-family.css";
+
+.home4 h2 {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  color: var(--colorTextPrimary);
+  span {
+    color: var(--primaryColor);
+  }
+}
+
+.home4 p {
+  font-family: var(--font-primary);
+  color: var(--textDescriptionColor);
+  font-weight: 400;
+}
