@@ -1,0 +1,22 @@
+@import "../../constants/colores.css";
+
+.arrows .arrow {
+  border: solid 1.5px #999999;
+  padding: 1rem;
+  border-radius: 100%;
+  margin: 1rem;
+}
+
+.arrows .arrow img {
+  width: 25px;
+  height: 25px;
+}
+
+.arrows .arrow-left {
+  background-color: var(--secondaryColor);
+}
+
+.arrows .arrow-right {
+  border: solid 1px var(--primaryColor);
+  background-color: var(--primaryColor);
+}
