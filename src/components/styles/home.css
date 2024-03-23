@@ -1,0 +1,176 @@
+@import "../../constants/colores.css";
+@import "../../constants/font-family.css";
+
+.home-container {
+  margin-top: 50px;
+}
+
+.home-container .home .home1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.home-container .home .home1 .home1-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+.home-container .home .home1 .home1-left {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.home-container .home .home1 .home1-left h1 {
+  font-family: var(--font-secondary);
+  font-size: 50px;
+  font-weight: 700;
+  text-align: left;
+  padding-bottom: 20px;
+  color: var(--colorTextPrimary);
+  span {
+    color: var(--primaryColor);
+    font-weight: 700;
+  }
+}
+.home-container .home .home1 .home1-left p {
+  font-family: var(--font-primary);
+  color: var(--textDescriptionColor);
+}
+
+.home-container .home .home1 .home1-left button {
+  font-family: var(--font-primary-medium);
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  background: transparent;
+  border-radius: 5px;
+  border: solid 1px var(--backgroundShadow);
+  color: var(--primaryColor);
+  padding: 15px 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.home-container .home .home1 .home1-left button:hover {
+  background: var(--backgroundShadow);
+  border: none;
+  padding: 15px 40px;
+  box-shadow: 5px 3px 37px -4px var(--backgroundShadowButton);
+  color: var(--secondaryColor);
+}
+
+.home-container .home .home1 .home1-right {
+  flex: 1;
+}
+
+.home-container .home2 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-primary);
+  padding: 2rem 0;
+}
+
+.home-container .home2 .container-home2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: center;
+  height: 100%;
+  width: 65%;
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: var(--secondaryColor);
+  box-shadow: 5px 3px 30px -4px rgb(174, 174, 174);
+}
+
+.home-container .home2 .container-home2 .item {
+  text-align: start;
+  padding: 10px;
+  width: 100%;
+}
+
+.home-container .home2 .container-home2 .item h3 {
+  color: var(--colorTextPrimary);
+  display: flex;
+  gap: 0.5em;
+}
+
+.home-container .home2 .container-home2 p {
+  font-size: 12px;
+  color: var(--textDescriptionColor);
+}
+
+.home-container .home2 .container-home2 .item button {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  background: var(--primaryColor);
+  border: 0.5px solid transparent;
+  padding: 15px 15px;
+  border-radius: 5px;
+  color: var(--secondaryColor);
+}
+
+.home-container .home2 .container-home2 .item button:hover {
+  background: var(--secondaryColor);
+  color: var(--primaryColor);
+  border: 0.5px solid var(--primaryColor);
+  box-shadow: 5px 3px 37px -4px var(--backgroundShadowButton);
+}
+
+@media screen and (max-width: 550px) {
+  .home-container .home .home1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-container .home .home1 .home1-container {
+    flex-direction: column;
+  }
+
+  .home-container .home .home1 .home1-left h1 {
+    font-size: 45px;
+    width: 100%;
+    line-height: normal;
+  }
+
+  .home-container .home .home1 .home1-right {
+    margin-top: 30px;
+  }
+
+  .home-container .home2 .container-home2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .home-container .home2 .container-home2 .item {
+    display: grid;
+    justify-items: center;
+  }
+}
+
+@media (min-width: 551px) and (max-width: 866px) {
+  .home-container .home .home1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-container .home .home1 .home1-container {
+    flex-direction: column;
+  }
+
+  .home-container .home .home1 .home1-right {
+    margin-top: 30px;
+  }
+
+  .home-container .home2 .container-home2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
