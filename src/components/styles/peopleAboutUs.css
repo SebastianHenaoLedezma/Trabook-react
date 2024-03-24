@@ -1,0 +1,99 @@
+@import "../../constants/colores.css";
+@import "../../constants/font-family.css";
+
+.People_About_us {
+  background-color: var(--backgroundCardsColor);
+  justify-content: center;
+  padding: 100px 1em 100px 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+
+.People_About_us .text h3 {
+  font-family: var(--font-secondary);
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.People_About_us .text h3 span {
+  color: var(--primaryColor);
+}
+
+.People_About_us .text p {
+  font-family: var(--font-primary);
+}
+
+.People_About_us .text .Arrows {
+  display: flex;
+}
+
+.People_About_us .about-us-container-cardComments {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: 460px;
+}
+
+.People_About_us .backgroundImg {
+  position: absolute;
+  top: 0;
+  right: 14em;
+  height: 150px;
+}
+
+.swiper {
+  width: 500px;
+  max-width: 100vh;
+  height: auto;
+}
+
+.swiper-slide {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-weight: bold;
+  overflow: visible;
+}
+
+.swiper-3d .swiper-slide-shadow {
+  background: transparent !important;
+}
+
+@media screen and (max-width: 550px) {
+  .People_About_us {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .People_About_us .text h3 {
+    text-align: center;
+  }
+
+  .People_About_us .backgroundImg {
+    right: 3em;
+  }
+
+  .swiper {
+    width: 300px;
+  }
+}
+
+@media (min-width: 551px) and (max-width: 866px) {
+  .People_About_us {
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+  }
+
+  .People_About_us .text h3 {
+    text-align: center;
+  }
+
+  .People_About_us .backgroundImg {
+    right: 8em;
+  }
+}
