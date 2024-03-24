@@ -57,7 +57,7 @@
                   alt={item.title}
                 />
                 <div className="container-btn">
-                  <button className="btn-booking" onClick={console.log('Book now clicked')}>Book now</button>
+                  <button className="btn-booking" onClick={() => console.log("item pressed")}>Book now</button>
                 </div>
               </div>
               <div className="CardFooter text-small justify-between pt-10 w-full flex-col">
