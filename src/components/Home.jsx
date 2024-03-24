@@ -7,6 +7,7 @@ import flecha from '../assets/images/Flecha.svg';
 import ThingsToDo from './ThingsToDo';
 import Offers from './Offers';
 import Vacation from './Vacation';
+import PeopleAboutUs from './PeopleAboutUs';
 
 const Home = () => {
   return (
@@ -51,6 +52,7 @@ const Home = () => {
                 <ThingsToDo />
                 <Offers />
                 <Vacation />
+                <PeopleAboutUs />
             </div>
         </section>
     </>
