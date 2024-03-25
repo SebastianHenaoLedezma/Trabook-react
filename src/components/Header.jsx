@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import "./styles/header.css";
 import logotipo from '../assets/images/logo.png'
+import Login from './Login';
 
 const Header = () => {
 
@@ -10,6 +12,12 @@ const Header = () => {
       setClicked(!clicked)
   }
 
+
+  const navigate = useNavigate();
+
+  const handleLoginClick = () => {
+    navigate('/login');
+  };
 
   return (
     <>
@@ -38,7 +46,7 @@ const Header = () => {
             </div>
             <div className='buttons'>
               <button className='button-login'>Login</button>
-              <button className='button-singup'>Sing Up</button>
+              <button className='button-singup' onClick={handleLoginClick}>Sing Up</button>
             </div>
 
           </div>
