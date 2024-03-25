@@ -33,11 +33,13 @@
   text-align: left;
   padding-bottom: 20px;
   color: var(--colorTextPrimary);
-  span {
-    color: var(--primaryColor);
-    font-weight: 700;
-  }
 }
+
+.home-container .home .home1 .home1-left span {
+  color: var(--primaryColor);
+  font-weight: 700;
+}
+
 .home-container .home .home1 .home1-left p {
   font-family: var(--font-primary);
   color: var(--textDescriptionColor);

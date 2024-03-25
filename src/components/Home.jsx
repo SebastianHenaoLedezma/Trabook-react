@@ -8,6 +8,9 @@ import ThingsToDo from './ThingsToDo';
 import Offers from './Offers';
 import Vacation from './Vacation';
 import PeopleAboutUs from './PeopleAboutUs';
+import Blog from './Blog';
+import Suscribe from './Suscribe';
+import Foooter from './Foooter';
 
 const Home = () => {
   return (
@@ -53,6 +56,9 @@ const Home = () => {
                 <Offers />
                 <Vacation />
                 <PeopleAboutUs />
+                <Blog/>
+                <Suscribe />
+                <Foooter />
             </div>
         </section>
     </>

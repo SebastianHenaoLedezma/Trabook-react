@@ -1,13 +1,13 @@
 @import "../../constants/colores.css";
 @import "../../constants/font-family.css";
 
-.CardCommentsContainer {
+.card-comments-container {
   position: relative;
   width: 100%;
   height: auto;
 }
 
-.CardCommentsContainer .CardComments {
+.card-comments-container .card-comments {
   padding-right: 2em;
   font-family: var(--font-primary);
   position: relative;
@@ -16,17 +16,17 @@
   z-index: 2;
 }
 
-.CardCommentsContainer .CardComments .Client {
+.card-comments-container .card-comments .Client {
   position: relative;
 }
 
-.CardCommentsContainer .CardComments .Client .client_img {
+.card-comments-container .card-comments .Client .client_img {
   position: absolute;
   top: -2em;
   left: -2em;
 }
 
-.CardCommentsContainer .CardComments .Client .client_text {
+.card-comments-container .card-comments .Client .client_text {
   position: unset;
   padding: 20px 30px 10px 20px;
   background-color: var(--secondaryColor);
@@ -37,19 +37,19 @@
   box-shadow: 0px 0px 37px -4px var(--textDescriptionColor);
 }
 
-.CardCommentsContainer .CardComments .Client .client_text p {
+.card-comments-container .card-comments .Client .client_text p {
   font-weight: 500;
   margin-bottom: 1rem;
   color: var(--descriptionUserColor);
 }
 
-.CardCommentsContainer .CardComments .Client .client_text h5 {
+.card-comments-container .card-comments .Client .client_text h5 {
   font-weight: 600;
   font-size: 18px;
   color: var(--colorTextPrimary);
 }
 
-.CardCommentsContainer .CardComments .Client .client_text .client_name p {
+.card-comments-container .card-comments .Client .client_text .client_name p {
   font-weight: 500;
   font-size: 14px;
   color: var(--textDescriptionColor);

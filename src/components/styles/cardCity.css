@@ -2,12 +2,10 @@
 @import "../../constants/font-family.css";
 
 .card-container div{
-  /* display: grid; */
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .card-container div .Card {
-  /* box-shadow: 5px 3px 30px 4px rgb(174, 174, 174); */
   border: 1px solid #66666636;
   font-family: var(--font-primary);
   font-weight: 500;

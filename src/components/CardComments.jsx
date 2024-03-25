@@ -9,8 +9,8 @@ const CardComments = ({ item }) => {
 
   return (
     <>
-        <div className='CardCommentsContainer'>
-            <div className={`CardComments ${clicked ? 'active' : ''}`} onClick={handleClick}>
+        <div className='card-comments-container'>
+            <div className={`card-comments ${clicked ? 'active' : ''}`} onClick={handleClick}>
                 <div className="Client">
                     <div className="client_img">
                         <img src={item.photo} alt="User photo" className="img-top-left"/>

@@ -5,9 +5,10 @@
   font-family: var(--font-secondary);
   font-weight: 700;
   color: var(--colorTextPrimary);
-  span {
-    color: var(--primaryColor);
-  }
+}
+
+.home5 h2 span {
+  color: var(--primaryColor);
 }
 
 .home5 .info-vacation {
@@ -20,7 +21,7 @@
 }
 
 .home5 .info-vacation .img-palms {
-    z-index: -1;
+  z-index: -1;
   position: absolute;
   top: 0;
   right: -10em;
@@ -45,7 +46,7 @@
 }
 
 @media (min-width: 551px) and (max-width: 866px) {
-    .home5 .info-vacation .img-palms {
-        right: -7em;
-      }
+  .home5 .info-vacation .img-palms {
+    right: -7em;
+  }
 }

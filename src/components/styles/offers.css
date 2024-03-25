@@ -5,9 +5,10 @@
   font-family: var(--font-secondary);
   font-weight: 700;
   color: var(--colorTextPrimary);
-  span {
-    color: var(--primaryColor);
-  }
+}
+
+.home4 h2 span {
+  color: var(--primaryColor);
 }
 
 .home4 p {

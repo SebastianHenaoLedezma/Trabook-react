@@ -1,7 +1,8 @@
 @import "../../constants/colores.css";
 @import "../../constants/font-family.css";
 
-.People_About_us {
+.people_about_us {
+  position: relative;
   background-color: var(--backgroundCardsColor);
   justify-content: center;
   padding: 100px 1em 100px 1em;
@@ -10,53 +11,53 @@
   gap: 1em;
 }
 
-.People_About_us .text {
+.people_about_us .text {
     display: flex;
     flex-direction: column;
     gap: 2em;
     padding: 2em;
 }
 
-.People_About_us .text h3 {
+.people_about_us .text h3 {
   font-family: var(--font-secondary);
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 25px;
 }
 
-.People_About_us .text h3 span {
+.people_about_us .text h3 span {
   color: var(--primaryColor);
 }
 
-.People_About_us .text p {
+.people_about_us .text p {
   font-family: var(--font-primary);
 }
 
-.People_About_us .text .Arrows {
+.people_about_us .text .Arrows {
   display: flex;
 }
 
-.People_About_us .about-us-container-cardComments {
+.people_about_us .about-us-container-cardComments {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
   height: 460px;
 }
 
-.People_About_us .backgroundImg {
+.people_about_us .backgroundImg {
   position: absolute;
-  top: 0;
+  top: 2em;
   right: 14em;
   height: 150px;
 }
 
-.swiper {
+.about-us-container-cardComments .swiper {
   width: 500px;
   max-width: 100vh;
   height: auto;
 }
 
-.swiper-slide {
+.about-us-container-cardComments .swiper-slide {
   display: flex !important;
   align-items: center;
   justify-content: center;
@@ -70,38 +71,38 @@
 }
 
 @media screen and (max-width: 550px) {
-  .People_About_us {
+  .people_about_us {
     display: flex;
     flex-direction: column;
     gap: 2em;
   }
 
-  .People_About_us .text h3 {
+  .people_about_us .text h3 {
     text-align: center;
     font-size: 40px;
   }
 
-  .People_About_us .backgroundImg {
+  .people_about_us .backgroundImg {
     right: 3em;
   }
 
-  .swiper {
+  .about-us-container-cardComments .swiper {
     width: 300px;
   }
 }
 
 @media (min-width: 551px) and (max-width: 866px) {
-  .People_About_us {
+  .people_about_us {
     display: flex;
     flex-direction: column;
     gap: 0em;
   }
 
-  .People_About_us .text h3 {
+  .people_about_us .text h3 {
     text-align: center;
   }
 
-  .People_About_us .backgroundImg {
+  .people_about_us .backgroundImg {
     right: 8em;
   }
 }
