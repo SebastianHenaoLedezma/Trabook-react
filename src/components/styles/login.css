@@ -1,0 +1,139 @@
+@import "../../constants/colores.css";
+@import "../../constants/font-family.css";
+
+.login{
+    font-family: var(--font-primary);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.login .container {
+    position: relative;
+    width: max-content;
+    background-color: var(--backgroundCardsColor);
+    padding: 60px;
+    margin: 4em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    gap: 10px;
+}
+
+.login .container .x{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2em;
+    cursor: pointer;
+}
+
+.login .container .info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-right: 50px;
+    gap: 35px;
+}
+
+.login .container .info h2 {
+    font-family: var(--font-secondary);
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.login .container .info p{
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.login .container .form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login .container .form h2 {
+    font-family: var(--font-secondary);
+    text-align: center;
+    font-size: 30px;
+}
+
+.login .container .form h2 span{
+    color: var(--primaryColor);
+}
+
+.login .container .form .form-group {
+    margin-bottom: 20px;
+}
+
+.login .container .form .form-group label {
+    display: block;
+    color: var(--primaryColor);
+    padding-bottom: 6px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.login .container .form .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--primaryColor);
+    border-radius: 5px;
+}
+
+.login .container .form .form-group :focus-visible{
+    outline: var(--primaryColor) auto 0.5px;
+}
+
+.login .container .form .btn {
+    background-color: var(--primaryColor);
+    color: #fff;
+    border: 1.5px solid var(--primaryColor);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    box-shadow: 0px 6px 10px #fa74368a;
+}
+
+.login .container .form .btn:hover {
+    background-color: white;
+    border: 1.5px solid var(--primaryColor);
+    color: var(--primaryColor);
+}
+
+
+@media screen and (max-width: 760px) {
+    .login .container {
+        background-color: #fff;
+        padding: 60px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 0;
+    }
+
+    .login .container .info {
+        flex: 1;
+        padding-right: 0;
+        padding-bottom: 25px;
+        gap: 15px;
+    }
+
+    .login .container .info h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
