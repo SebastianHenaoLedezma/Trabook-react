@@ -25,6 +25,10 @@
   height: 490px;
 }
 
+.blog .swiper{
+  /* background-color: red; */
+  padding-bottom: 20px;
+}
 .blog-content .swiper-slide{
   display: flex;
   justify-content: center;
