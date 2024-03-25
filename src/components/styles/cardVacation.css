@@ -7,64 +7,61 @@
 }
 
 .CardVaction div {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 
-.CardVaction .Card{
-    margin: 15px;
-    border: 2px solid #66666628;
-    border-radius: 20px;
+.CardVaction .Card {
+  margin: 15px;
+  border: 2px solid #66666628;
+  border-radius: 20px;
 }
 
 .CardVaction div .Card:hover {
-    box-shadow: 0px 0px 37px -6px var(--backgroundShadowButton);
-  }
-
-.CardVaction .Card .CardBody {
-  img {
-    width: 100%;
-    object-fit: cover;
-  }
+  box-shadow: 0px 0px 37px -6px var(--backgroundShadowButton);
 }
 
-.CardVaction .Card .CardFooter{
-    padding: 25px 15px 10px 15px;
+.CardVaction .Card .CardBody img {
+  width: 100%;
+  object-fit: cover;
 }
 
-.CardVaction .Card .CardFooter b{
-    font-family: var(--font-primary);
-    font-weight: 500;
+.CardVaction .Card .CardFooter {
+  padding: 25px 15px 10px 15px;
 }
 
-.CardVaction .Card .CardFooter .price{
-    font-family: var(--font-primary);
-    font-weight: 600;
-    color: var(--primaryColor);
+.CardVaction .Card .CardFooter b {
+  font-family: var(--font-primary);
+  font-weight: 500;
 }
 
-.CardVaction .Card .CardFooter h2{
-    font-family: var(--font-primary);
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--textDescriptionColor);
+.CardVaction .Card .CardFooter .price {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  color: var(--primaryColor);
 }
 
-.CardVaction .Card .CardFooter .rate{
-    font-size: 16px;
-    font-weight: 400;
+.CardVaction .Card .CardFooter h2 {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--textDescriptionColor);
 }
 
+.CardVaction .Card .CardFooter .rate {
+  font-size: 16px;
+  font-weight: 400;
+}
 
 @media screen and (max-width: 616px) {
-    .CardVaction div {
-      grid-template-columns: repeat(1, 1fr);
-      gap: 1em;
-    }
+  .CardVaction div {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
   }
-  
-  @media (min-width: 617px) and (max-width: 1222px) {
-    .CardVaction div {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1em;
-    }
+}
+
+@media (min-width: 617px) and (max-width: 1222px) {
+  .CardVaction div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
   }
+}
