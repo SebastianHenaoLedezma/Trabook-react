@@ -1,0 +1,43 @@
+@import "../../constants/colores.css";
+@import "../../constants/font-family.css";
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px 100px 0px;
+}
+
+.blog .blog-text h3 {
+  text-align: center;
+  font-family: var(--font-secondary);
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.blog .blog-text h3 span {
+  color: var(--primaryColor);
+}
+
+.blog .blog-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 490px;
+}
+
+.blog-content .swiper-slide{
+  display: flex;
+  justify-content: center;
+}
+
+.blog-content .swiper-pagination-horizontal{
+  height: 20px;
+  align-content: center;
+}
+
+.blog-content .swiper-pagination-horizontal .swiper-pagination-bullet{
+  background-color: var(--primaryColor);
+  transform: scale(2);
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px) !important;
+}
+

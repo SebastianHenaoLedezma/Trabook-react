@@ -1,0 +1,43 @@
+@import "../../constants/colores.css";
+@import "../../constants/font-family.css";
+
+.card-blog-container{
+    justify-content: space-between;
+    border: 1px solid #66666636;
+    border-radius: 13px;
+    width: fit-content;
+    margin: 15px;
+}
+
+.card-blog-container .blog_card {
+    width: 272px;
+    height: 426px;
+    padding: 0;
+}
+
+.card-blog-container .blog_card img{
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.card-blog-container .blog_card .indications {
+    font-family: var(--font-primary);
+    padding: 0px 15px 10px 15px;
+    border-top: none;
+}
+
+.card-blog-container .blog_card .indications .blog_text h4 {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.card-blog-container .blog_card .indications .blog_top h6 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--textDescriptionColor);
+    font-weight: 400;
+}
