@@ -49,7 +49,7 @@ const PeopleAboutUs = () => {
 
   return (
     <>
-        <div className="People_About_us">
+        <div className="people_about_us">
             <div className="text">
                 <h3>What people say <br /><span>about us.</span></h3>
                 <p>Our Clients send us bunch of smilies with our services and we love them.</p>
@@ -58,6 +58,7 @@ const PeopleAboutUs = () => {
                     <Arrows />
                 </div>
             </div>
+                <img className='backgroundImg' src={planeImg} alt="Background planes"/>
 
             <div className='about-us-container-cardComments'>
                 <Swiper
@@ -74,8 +75,7 @@ const PeopleAboutUs = () => {
                     ))}
                 </Swiper>
             </div>
-
-            <img className='backgroundImg' src={planeImg} alt="Background planes"/>
+                        
         </div>
     </>
   )
