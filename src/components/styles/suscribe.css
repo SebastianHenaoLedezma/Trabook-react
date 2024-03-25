@@ -1,0 +1,121 @@
+@import "../../constants/colores.css";
+@import "../../constants/font-family.css";
+
+.newsletter {
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  background-color: var(--primaryColor);
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter .palmeras {
+  position: absolute;
+  padding-top: 10px;
+  right: 0;
+  top: 0;
+}
+
+.newsletter .container-subscribe {
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.newsletter h3 {
+  padding: 100px 80px 30px 80px;
+  font-family: var(--font-secondary);
+  z-index: 100;
+  font-weight: 700;
+  max-width: 1000px;
+  font-size: 48px;
+  color: var(--secondaryColor);
+  text-align: center;
+}
+
+.newsletter .container {
+  position: relative;
+  padding: 10px;
+  z-index: 1;
+  width: 70%;
+  height: auto;
+  background-color: var(--secondaryColor);
+  border-radius: 15px;
+  font-size: 18px;
+}
+
+.newsletter .container .form-group {
+  display: flex;
+  padding: 0.5em;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+.newsletter .container .form-group .from-text {
+  display: flex;
+  width: -webkit-fill-available;
+  gap: 1em;
+}
+
+.newsletter .container img {
+  height: 30px;
+}
+
+.newsletter .form-control {
+  width: 70%;
+  color: var(--textDescriptionColor);
+  font-size: 20px;
+  outline: none;
+  height: auto;
+  border: none;
+}
+
+.newsletter .olas {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.btn-subscribe {
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  background-color: var(--primaryColor) !important;
+  border: 1px solid transparent;
+  padding: 15px 40px;
+  box-shadow: 2px 1px 20px -5px var(--backgroundShadowButton);
+}
+
+.btn-subscribe:hover {
+    color: var(--primaryColor);
+    background-color: var(--secondaryColor) !important;
+    border: 1px solid var(--primaryColor);
+  }
+
+@media screen and (max-width: 550px) {
+  .newsletter h3 {
+    font-size: 2rem;
+    padding: 100px 40px 15px 40px;
+  }
+  .newsletter .container {
+    width: 70%;
+  }
+
+  .btn-subscribe {
+    padding: 15px 20px;
+  }
+  .newsletter .container .form-group{
+    flex-direction: column;
+    gap: 2em;
+    padding: 0.5em;
+  }
+}
